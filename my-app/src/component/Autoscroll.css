@@ -1,0 +1,167 @@
+.arvadex-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.arvadex-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.arvadex-container p {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(147, 147, 207);
+}
+
+.secure-box {
+  background-color: rgb(40, 40, 50);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.secure-box span {
+  display: block;
+  margin-top: 5px;
+  color: #00bcd4;
+}
+.scroller{
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border: 1px solid white;
+  mask-image: linear-gradient(to right, transparent 0%,black 10%,black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right,
+  transparent 0%,black 90%, transparent 100%)
+}
+.scroll-content{
+  display: flex;
+  gap: 30px;
+  animation: scroll 10s linear infinite;
+}
+.scroller:hover .scroll-content{
+  animation-play-state: paused;
+}
+.scroll-item{
+  flex: 0 0 auto;
+  width: 120px;
+  height: 80px;
+
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-item img{
+  width: 95%;
+  height: 95%;
+  border-radius: 15px;
+}
+/* 
+================= SCROLL ANIMATION ================= */
+
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width:650){
+  .arvadex-container {
+    padding-right: 10px;
+  }
+  .arvadex-container p {
+  font-size: 12px;
+ 
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(147, 147, 207);
+}
+
+.secure-box {
+  background-color: rgb(40, 40, 50);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.secure-box span {
+  display: block;
+  margin-top: 5px;
+  color: #00bcd4;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+.scroller {
+  border: 1px solid green;
+  max-width: 800px;
+  margin-inline: auto;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,0) 80%
+    rgba(0,0,0,0) 80%
+  );
+}
+
+/* Each box */
+.item {
+  width: 120px;
+  height: 50px;
+  background: #111;
+  border-radius: 10px;
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  animation: scrollLeft 30s linear infinite;
+  animation-delay: -10s;
+}
+
+/* ✅ Stagger each item evenly */
+/* .item1 {
+  animation-delay: 0s;
+}
+.item2 {
+  animation-delay: 3s;
+}
+.item3 {
+  animation-delay: 7s;
+}
+.item4 {
+  animation-delay: 10ss;
+} */
+
+/* ✅ Moves from right → left fully */
+@keyframes scrollLeft {
+
+  to {
+    left: -120px; /* a bit extra to fully leave the container */
+  }
+}
+
+}

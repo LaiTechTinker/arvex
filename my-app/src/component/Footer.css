@@ -1,0 +1,124 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* CTA Section */
+.cta-container {
+  background: linear-gradient(145deg, #111113, #090909);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.cta-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-content h3 span {
+  color: #fff;
+}
+
+.cta-content p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  max-width: 600px;
+}
+
+.orange-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #ffa74f, #ff8300);
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 138, 0, 0.4);
+}
+
+/* Footer Main Content */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  font-size: 1.6rem;
+  color: #ffae42;
+  margin-right: 8px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer-section h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  color: #cfcfcf;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-section li:hover {
+  color: #ffae42;
+}
+
+.socials i {
+  margin-right: 12px;
+  font-size: 1.1rem;
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+  color:#ffae42;
+}
+
+.socials i:hover {
+  color: #ffae42;
+  transform: scale(1.2);
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: #999;
+  font-size: 0.9rem;
+  font-size:12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

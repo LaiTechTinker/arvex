@@ -1,0 +1,77 @@
+.whychoose {
+  background: #0b0c10;
+  color: #fff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.whychoose-container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.whychoose h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  color: #8b5cf6; /* soft violet accent */
+}
+
+.subtitle {
+  color: #cfcfcf;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #12141a, #0f1015);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf6;
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.2);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #ffae42;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #b5b5b5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.img-bx{
+width:70px;
+height:70px;
+border-radius:10px;
+border:1px solid #ffae42;
+display:flex;
+align-items:center;
+justify-content:center;
+}
